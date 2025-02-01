@@ -4,29 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<style>
+  .container-2{
+    display:grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 2.5fr 2.5fr 1fr;
+    background-color: #201710;
+    width:100%;
+    height:101vh
+  }
+
+  .item-1{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .this{
+    border: 1px
+  }
+  .this:hover{
+    box-shadow: 0 8px 16px #0e0701;
+        transform: scale(1.05);
+  }
+  .item-2{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .item-3{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row: span 2;
+    background-color: #0e0701;
+  }
+
+</style>
+<body class="bgc">
   <div>
-    <p>MARBLE</p>
-    <a href="Menu.html">☰</a>
+    <a class="topL" href="index.html">MARBLE</a>
     <br>
-    <h1 align="center">“Marvel in symbols that 
+    <a class="menu" href="Menu.html">☰</a>
+    <br>
+  </div>
+    <div class="container-1">
+    <h1>“Marvel in symbols that 
         <br> stained the slates who <br> 
         bear to witness thy
         <br>essence of mind.”</h1>
         <br>
-  </div>
+    </div>
+
+    <div class="container-2">
+        <div class="item-1" class="img">
+          <img class="this" src="./Image/img (8).jpg" width="250px">
+        </div>
+        <div class="item-2" class="img">
+          <img class="this" src="./Image/img (9).jpg" width="250px">
+        </div>
+        <div class="item-3" class="img">
+          <img class="this" src="./Image/img (10).jpg" width="250px">
+        </div>
+    </div>
+
+    <div class="container-3">
+
+    </div>
   <br>
   <br>
   <br>
   <br>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <hr>
   <footer align="center"><i>© Denise Colis. All rights reserved.</i></footer>
+ </div>
 </body>
 </html>
