@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="Intro">
-        <p>MARBLE</p>
-        <a href="Menu.html">☰</a>
-        <h1 align="center">GALLERY</h1>
+<style>
+    .container-img{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        gap:1em;
+    }
+
+    .img{
+        border: 1px solid #f9e3da;
+    }
+    .img:hover{
+        box-shadow: 0 8px 16px #201710;
+        transform: scale(1.05);
+    }
+
+    
+</style>
+<body class="bgc">
+    <div>
+        <a class="topL" href="index.html">MARBLE</a>
+        <br>
+        <a class="menu" href="Menu.html">☰</a>
+        <br>
     </div>
+        <h1 align="center">GALLERY</h1>
     <hr>
-    <div class="line1">
-        <img src="./Images/img (4).jpg" width="300px" height="300px">
-        <img src="./Images/img (5).jpg" width="300px" height="300px">
-        <img src="./Images/img (7).jpg" width="300px" height="300px">
-        <img src="./Images/img (3).jpg" width="300px" height="300px">
-        <img src="./Images/img (6).jpg" width="300px" height="300px">
-        <img src="./Images/img (1).jpg" width="300px" height="300px">
-        <img src="./Images/img (2).jpg" width="300px" height="300px">
+    <div class="container-img">
+        <img class="img" src="./Image/img (4).jpg" width="300px" height="300px">
+        <img class="img" src="./Image/img (5).jpg" width="300px" height="300px">
+        <img class="img" src="./Image/img (7).jpg" width="300px" height="300px">
+        <img class="img" src="./Image/img (3).jpg" width="300px" height="300px">
+        <img class="img" src="./Image/img (6).jpg" width="300px" height="300px">
+        <img class="img" src="./Image/img (1).jpg" width="300px" height="300px">
+        <img class="img" src="./Image/img (2).jpg" width="300px" height="300px">
     </div>
     <br>
     <br>
